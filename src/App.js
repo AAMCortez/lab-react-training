@@ -1,11 +1,19 @@
 import './App.css';
 import BoxColor from './components/BoxColor';
+import Carousel from './components/Carousel';
+import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
+import Dice from './components/Dice';
 import DriverCard from './components/DriverCard';
+import FaceBook from './components/FaceBook';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
+import LikeButton from './components/LikeButton';
+import NumbersTable from './components/NumbersTable';
 import Random from './components/Random';
 import Ratings from './components/Ratings';
+import RGBColorPicker from './components/RGBColorPicker';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -91,6 +99,23 @@ function App() {
           }}
         />
       </div>
+      <LikeButton />
+      <ClickablePicture />
+      <Dice />
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+      <table>
+        <NumbersTable limit={12} />
+      </table>
+      <FaceBook />
+      <SignupPage />
+      <RGBColorPicker />
     </div>
   );
 }
